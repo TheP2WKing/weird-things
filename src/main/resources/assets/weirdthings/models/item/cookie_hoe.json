@@ -1,0 +1,7 @@
+{
+	"parent": "item/handheld",
+	"textures": 
+	{
+		"layer0": "weirdthings:items/cookie_hoe"
+	}
+}

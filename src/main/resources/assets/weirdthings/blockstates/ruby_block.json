@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "weirdthings:ruby_block"
+        }
+    }
+}

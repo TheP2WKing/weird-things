@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "weirdthings:mega_tnt"
+        },
+        "explode=false": 
+        { 
+            "model": "weirdthings:mega_tnt"
+        },
+        "explode=true": 
+        { 
+            "model": "weirdthings:mega_tnt"
+        }
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "weirdthings:blocks/cookie_grass_top",
+        "bottom": "weirdthings:blocks/cookie_dirt",
+        "side": "weirdthings:blocks/cookie_grass_side"
+    }
+}

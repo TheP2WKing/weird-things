@@ -1,0 +1,9 @@
+{
+    "parent": "minecraft:block/cube_bottom_top",
+    "textures": 
+    {
+        "top": "weirdthings:blocks/chicken_log_top",
+        "bottom": "weirdthings:blocks/chicken_log_top",
+        "side": "weirdthings:blocks/chicken_log_side"
+    }
+}

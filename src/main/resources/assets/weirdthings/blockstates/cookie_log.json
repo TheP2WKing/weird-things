@@ -1,0 +1,9 @@
+{
+    "variants": 
+    {
+        "axis=y":  { "model": "weirdthings:cookie_log" },
+        "axis=z":   { "model": "weirdthings:cookie_log", "x": 90 },
+        "axis=x":   { "model": "weirdthings:cookie_log", "x": 90, "y": 90 },
+        "axis=none": { "model": "weirdthings:cookie_log" }
+    }
+}

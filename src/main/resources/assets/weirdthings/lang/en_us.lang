@@ -1,0 +1,72 @@
+# creative tabs
+itemGroup.weirdthings.name=Weird Things Reloaded
+
+# blocks
+tile.weirdthings.cookie_ore.name=Cookie Ore
+tile.weirdthings.ruby_ore.name=Ruby Ore
+tile.weirdthings.rendium_ore.name=Rendium Ore
+tile.weirdthings.fire_ore.name=Fire Ore
+
+tile.weirdthings.cookie_block.name=Block of Cookie
+tile.weirdthings.ruby_block.name=Block of Ruby
+tile.weirdthings.rendium_block.name=Block of Rendium
+
+tile.weirdthings.cookie_grass.name=Cookie Grass
+tile.weirdthings.cookie_dirt.name=Cookie Dirt
+tile.weirdthings.cookie_log.name=Cookie Log
+tile.weirdthings.cookie_planks.name=Cookie Planks
+
+tile.weirdthings.chicken_grass.name=Chicken Grass
+tile.weirdthings.chicken_dirt.name=Chicken Dirt
+tile.weirdthings.chicken_log.name=Chicken Log
+tile.weirdthings.chicken_planks.name=Chicken Planks
+
+tile.weirdthings.mega_tnt.name=Mega TNT
+
+tile.weirdthings.chicken_chest.name=Chicken Chest
+
+# items
+item.weirdthings.fire.name=Fire
+
+item.weirdthings.cookie_ingot.name=Cookie Ingot
+item.weirdthings.fin_brick.name=Fin Brick
+item.weirdthings.ruby.name=Ruby
+item.weirdthings.rendium.name=Rendium
+
+item.weirdthings.throwable_villager.name=Throwable Villager
+
+item.weirdthings.crossy_sword.name=Crossy Sword
+item.weirdthings.flame_hoe.name=Flame Hoe
+
+item.weirdthings.dirt_helmet.name=Dirt Helmet
+item.weirdthings.dirt_chestplate.name=Dirt Chestplate
+item.weirdthings.dirt_leggings.name=Dirt Leggings
+item.weirdthings.dirt_boots.name=Dirt Boots
+item.weirdthings.dirt_sword.name=Dirt Sword
+item.weirdthings.dirt_shovel.name=Dirt Shovel
+item.weirdthings.dirt_pickaxe.name=Dirt Pickaxe
+item.weirdthings.dirt_axe.name=Dirt Axe
+item.weirdthings.dirt_hoe.name=Dirt Hoe
+
+item.weirdthings.cookie_helmet.name=Cookie Helmet
+item.weirdthings.cookie_chestplate.name=Cookie Chestplate
+item.weirdthings.cookie_leggings.name=Cookie Leggings
+item.weirdthings.cookie_boots.name=Cookie Boots
+item.weirdthings.cookie_sword.name=Cookie Sword
+item.weirdthings.cookie_shovel.name=Cookie Shovel
+item.weirdthings.cookie_pickaxe.name=Cookie Pickaxe
+item.weirdthings.cookie_axe.name=Cookie Axe
+item.weirdthings.cookie_hoe.name=Cookie Hoe
+
+item.weirdthings.villager_helmet.name=Villager Helmet
+item.weirdthings.villager_chestplate.name=Villager Chestplate
+item.weirdthings.villager_leggings.name=Villager Leggings
+item.weirdthings.villager_boots.name=Villager Boots
+item.weirdthings.villager_sword.name=Villager Sword
+item.weirdthings.villager_shovel.name=Villager Shovel
+item.weirdthings.villager_pickaxe.name=Villager Pickaxe
+item.weirdthings.villager_axe.name=Villager Axe
+item.weirdthings.villager_hoe.name=Villager Hoe
+
+# entities
+entity.weirdthings.cookie_monster.name=Cookie Monster
