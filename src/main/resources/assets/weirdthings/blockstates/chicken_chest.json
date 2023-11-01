@@ -4,6 +4,22 @@
         "normal": 
         { 
             "model": "weirdthings:chicken_chest"
+        },
+        "facing=north": 
+        { 
+            "model": "weirdthings:chicken_chest"
+        },
+        "facing=east": 
+        { 
+            "model": "weirdthings:chicken_chest"
+        },
+        "facing=south": 
+        { 
+            "model": "weirdthings:chicken_chest"
+        },
+        "facing=west": 
+        { 
+            "model": "weirdthings:chicken_chest"
         }
     }
 }

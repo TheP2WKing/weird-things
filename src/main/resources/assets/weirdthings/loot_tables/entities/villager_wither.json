@@ -1,0 +1,15 @@
+{
+    "pools": [
+        {
+            "name": "weirdthings:villager_wither",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:nether_star",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

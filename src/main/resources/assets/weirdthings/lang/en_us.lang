@@ -4,8 +4,8 @@ itemGroup.weirdthings.name=Weird Things Reloaded
 # blocks
 tile.weirdthings.cookie_ore.name=Cookie Ore
 tile.weirdthings.ruby_ore.name=Ruby Ore
-tile.weirdthings.rendium_ore.name=Rendium Ore
 tile.weirdthings.fire_ore.name=Fire Ore
+tile.weirdthings.rendium_ore.name=Rendium Ore
 
 tile.weirdthings.cookie_block.name=Block of Cookie
 tile.weirdthings.ruby_block.name=Block of Ruby
@@ -24,6 +24,7 @@ tile.weirdthings.chicken_planks.name=Chicken Planks
 tile.weirdthings.mega_tnt.name=Mega TNT
 
 tile.weirdthings.chicken_chest.name=Chicken Chest
+tile.weirdthings.trapped_chicken_chest.name=Trapped Chicken Chest
 
 # items
 item.weirdthings.fire.name=Fire
@@ -32,6 +33,8 @@ item.weirdthings.cookie_ingot.name=Cookie Ingot
 item.weirdthings.fin_brick.name=Fin Brick
 item.weirdthings.ruby.name=Ruby
 item.weirdthings.rendium.name=Rendium
+
+item.weirdthings.rainbow_egg.name=Rainbow Egg
 
 item.weirdthings.throwable_villager.name=Throwable Villager
 
@@ -70,3 +73,20 @@ item.weirdthings.villager_hoe.name=Villager Hoe
 
 # entities
 entity.weirdthings.cookie_monster.name=Cookie Monster
+entity.weirdthings.arrowstorm_skeleton.name=Arrowstorm Skeleton
+entity.weirdthings.armed_creeper.name=Armed Creeper
+entity.weirdthings.creeper_chicken.name=Creeper Chicken
+entity.weirdthings.ender_villager.name=Ender Villager
+entity.weirdthings.villager_blaze.name=Villager Blaze
+entity.weirdthings.villager_ghast.name=Villager Ghast
+entity.weirdthings.villager_chicken.name=Villager Chicken
+entity.weirdthings.fat_chicken.name=Fat Chicken
+entity.weirdthings.crossy_road_chicken.name=Crossy Road Chicken
+entity.weirdthings.villager_wither.name=Villager Wither
+entity.weirdthings.villager_dragon.name=Villager Dragon
+entity.weirdthings.wither_girl.name=Wither Girl
+entity.weirdthings.hotdog.name=HotDog
+entity.weirdthings.dirt_chicken.name=Dirt Chicken
+entity.weirdthings.dirt_golem.name=Dirt Golem
+entity.weirdthings.continuously_turning_pig.name=Continuously Turning Pig
+entity.weirdthings.very_weird_pig.name=Very Weird Pig

@@ -2,6 +2,7 @@ package net.thep2wking.weirdthings.registry;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
+import net.minecraft.util.SoundEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -11,6 +12,7 @@ import net.thep2wking.reloadedlib.util.ModRegistryHelper;
 import net.thep2wking.weirdthings.WeirdThings;
 import net.thep2wking.weirdthings.init.ModBlocks;
 import net.thep2wking.weirdthings.init.ModItems;
+import net.thep2wking.weirdthings.init.ModSounds;
 import net.thep2wking.weirdthings.util.ModRendering;
 
 @Mod.EventBusSubscriber
@@ -21,8 +23,8 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.COOKIE_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.RUBY_ORE);
-		ModRegistryHelper.registerBlock(event, ModBlocks.RENDIUM_ORE);
 		ModRegistryHelper.registerBlock(event, ModBlocks.FIRE_ORE);
+		ModRegistryHelper.registerBlock(event, ModBlocks.RENDIUM_ORE);
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.COOKIE_BLOCK);
 		ModRegistryHelper.registerBlock(event, ModBlocks.RUBY_BLOCK);
@@ -40,6 +42,7 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerBlock(event, ModBlocks.MEGA_TNT);
 		ModRegistryHelper.registerBlock(event, ModBlocks.CHICKEN_CHEST);
+		ModRegistryHelper.registerBlock(event, ModBlocks.TRAPPED_CHICKEN_CHEST);
 	}
 
 	@SubscribeEvent
@@ -48,8 +51,8 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.COOKIE_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.RUBY_ORE);
-		ModRegistryHelper.registerItemBlock(event, ModItems.RENDIUM_ORE);
 		ModRegistryHelper.registerItemBlock(event, ModItems.FIRE_ORE);
+		ModRegistryHelper.registerItemBlock(event, ModItems.RENDIUM_ORE);
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.COOKIE_BLOCK);
 		ModRegistryHelper.registerItemBlock(event, ModItems.RUBY_BLOCK);
@@ -67,6 +70,7 @@ public class ModRegistry {
 
 		ModRegistryHelper.registerItemBlock(event, ModItems.MEGA_TNT);
 		ModRegistryHelper.registerItemBlock(event, ModItems.CHICKEN_CHEST);
+		ModRegistryHelper.registerItemBlock(event, ModItems.TRAPPED_CHICKEN_CHEST);
 
 		ModRegistryHelper.registerItem(event, ModItems.FIRE);
 
@@ -74,6 +78,8 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.FIN_BRICK);
 		ModRegistryHelper.registerItem(event, ModItems.RUBY);
 		ModRegistryHelper.registerItem(event, ModItems.RENDIUM);
+
+		ModRegistryHelper.registerItem(event, ModItems.RAINBOW_EGG);
 
 		ModRegistryHelper.registerItem(event, ModItems.THROWABLE_VILLAGER);
 
@@ -112,7 +118,16 @@ public class ModRegistry {
 	}
 
 	@SubscribeEvent
-	public static void onSoundModelRegister(ModelRegistryEvent event) {
+	public static void onSoundEventRegister(RegistryEvent.Register<SoundEvent> event) {
+		ModLogger.registeredSoundEventsLogger(WeirdThings.MODID);
+
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.WITHER_GIRL_IDLE);
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.WITHER_GIRL_HURT);
+		ModRegistryHelper.registerSoundEvent(event, ModSounds.WITHER_GIRL_DEATH);
+	}
+
+	@SubscribeEvent
+	public static void onModelRegister(ModelRegistryEvent event) {
 		ModRendering.registerEntityRender();
 	}
 }

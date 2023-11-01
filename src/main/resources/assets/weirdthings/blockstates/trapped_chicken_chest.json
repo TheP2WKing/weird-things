@@ -1,0 +1,25 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "weirdthings:trapped_chicken_chest"
+        },
+        "facing=north": 
+        { 
+            "model": "weirdthings:trapped_chicken_chest"
+        },
+        "facing=east": 
+        { 
+            "model": "weirdthings:trapped_chicken_chest"
+        },
+        "facing=south": 
+        { 
+            "model": "weirdthings:trapped_chicken_chest"
+        },
+        "facing=west": 
+        { 
+            "model": "weirdthings:trapped_chicken_chest"
+        }
+    }
+}

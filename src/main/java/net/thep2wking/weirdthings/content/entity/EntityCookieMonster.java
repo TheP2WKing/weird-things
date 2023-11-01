@@ -23,6 +23,7 @@ public class EntityCookieMonster extends EntityZombie {
 	@Override
 	public void applyEntityAttributes() {
 		super.applyEntityAttributes();
+		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20);
 		this.getEntityAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(4);
 	}
 
@@ -57,7 +58,17 @@ public class EntityCookieMonster extends EntityZombie {
 	}
 
 	@Nullable
+	@Override
 	public ResourceLocation getLootTable() {
 		return new ResourceLocation(WeirdThings.MODID, "entities/cookie_monster");
+	}
+
+	@Override
+	public float getEyeHeight() {
+		float f = 1.74F;
+		if (this.isChild()) {
+			f = (float) ((double) f - 0.81D);
+		}
+		return f;
 	}
 }

@@ -12,14 +12,19 @@ import net.thep2wking.reloadedlib.api.tool.ModItemShovelBase;
 import net.thep2wking.reloadedlib.api.tool.ModItemSwordBase;
 import net.thep2wking.reloadedlib.util.ModRarities;
 import net.thep2wking.weirdthings.WeirdThings;
+import net.thep2wking.weirdthings.content.item.ItemCrossySword;
+import net.thep2wking.weirdthings.content.item.ItemFire;
+import net.thep2wking.weirdthings.content.item.ItemFlameHoe;
+import net.thep2wking.weirdthings.content.item.ItemRainbowEgg;
+import net.thep2wking.weirdthings.content.item.ItemThrowableVillager;
 import net.thep2wking.weirdthings.util.ModArmorMaterial;
 import net.thep2wking.weirdthings.util.ModToolMaterial;
 
 public class ModItems {	
     public static final Item COOKIE_ORE = new ModItemBlockBase(ModBlocks.COOKIE_ORE, ModRarities.WHITE, false, 0);
     public static final Item RUBY_ORE = new ModItemBlockBase(ModBlocks.RUBY_ORE, ModRarities.WHITE, false, 0);
-    public static final Item RENDIUM_ORE = new ModItemBlockBase(ModBlocks.RENDIUM_ORE, ModRarities.WHITE, false, 0);
     public static final Item FIRE_ORE = new ModItemBlockBase(ModBlocks.FIRE_ORE, ModRarities.WHITE, false, 0);
+    public static final Item RENDIUM_ORE = new ModItemBlockBase(ModBlocks.RENDIUM_ORE, ModRarities.WHITE, false, 0);
 
     public static final Item COOKIE_BLOCK = new ModItemBlockBase(ModBlocks.COOKIE_BLOCK, ModRarities.WHITE, false, 0);
     public static final Item RUBY_BLOCK = new ModItemBlockBase(ModBlocks.RUBY_BLOCK, ModRarities.WHITE, false, 0);
@@ -37,19 +42,21 @@ public class ModItems {
 
     public static final Item MEGA_TNT = new ModItemBlockBase(ModBlocks.MEGA_TNT, ModRarities.WHITE, false, 0);
     public static final Item CHICKEN_CHEST = new ModItemBlockBase(ModBlocks.CHICKEN_CHEST, ModRarities.WHITE, false, 0);
+    public static final Item TRAPPED_CHICKEN_CHEST = new ModItemBlockBase(ModBlocks.TRAPPED_CHICKEN_CHEST, ModRarities.WHITE, false, 0);
     
-    public static final Item FIRE = new ModItemBase(WeirdThings.MODID, "fire", WeirdThings.TAB, ModRarities.WHITE, false, 0);
+    public static final Item FIRE = new ItemFire(WeirdThings.MODID, "fire", WeirdThings.TAB, ModRarities.WHITE, false, 0);
     
     public static final Item COOKIE_INGOT = new ModItemBase(WeirdThings.MODID, "cookie_ingot", WeirdThings.TAB, ModRarities.WHITE, false, 0);
     public static final Item FIN_BRICK = new ModItemBase(WeirdThings.MODID, "fin_brick", WeirdThings.TAB, ModRarities.WHITE, false, 0);
     public static final Item RUBY = new ModItemBase(WeirdThings.MODID, "ruby", WeirdThings.TAB, ModRarities.WHITE, false, 0);
     public static final Item RENDIUM = new ModItemBase(WeirdThings.MODID, "rendium", WeirdThings.TAB, ModRarities.WHITE, false, 0);
 
+    public static final Item RAINBOW_EGG = new ItemRainbowEgg(WeirdThings.MODID, "rainbow_egg", WeirdThings.TAB, ModRarities.WHITE, false, 0);
 
-    public static final Item THROWABLE_VILLAGER = new ModItemBase(WeirdThings.MODID, "throwable_villager", WeirdThings.TAB, ModRarities.WHITE, false, 0);
+    public static final Item THROWABLE_VILLAGER = new ItemThrowableVillager(WeirdThings.MODID, "throwable_villager", WeirdThings.TAB, ModRarities.WHITE, false, 0);
 
-    public static final Item CROSSY_SWORD = new ModItemBase(WeirdThings.MODID, "crossy_sword", WeirdThings.TAB, ModRarities.WHITE, false, 0);
-    public static final Item FLAME_HOE = new ModItemBase(WeirdThings.MODID, "flame_hoe", WeirdThings.TAB, ModRarities.WHITE, false, 0);
+    public static final Item CROSSY_SWORD = new ItemCrossySword(WeirdThings.MODID, "crossy_sword", WeirdThings.TAB, ModToolMaterial.CROSSY, 3f, -2.4f, ModRarities.WHITE, false, 0);
+    public static final Item FLAME_HOE = new ItemFlameHoe(WeirdThings.MODID, "flame_hoe", WeirdThings.TAB, ModToolMaterial.FLAME, 2f, -1f, ModRarities.WHITE, false, 0);
 
     public static final Item DIRT_HELMET = new ModItemArmorBase(WeirdThings.MODID, "dirt_helmet", WeirdThings.TAB, ModArmorMaterial.DIRT, 0, EntityEquipmentSlot.HEAD, ModRarities.WHITE, false, 0);
     public static final Item DIRT_CHESTPLATE = new ModItemArmorBase(WeirdThings.MODID, "dirt_chestplate", WeirdThings.TAB, ModArmorMaterial.DIRT, 0, EntityEquipmentSlot.CHEST, ModRarities.WHITE, false, 0);
@@ -58,7 +65,7 @@ public class ModItems {
     public static final Item DIRT_SWORD = new ModItemSwordBase(WeirdThings.MODID, "dirt_sword", WeirdThings.TAB, ModToolMaterial.DIRT, 3f, -2.4f, ModRarities.WHITE, false, 0);
     public static final Item DIRT_SHOVEL = new ModItemShovelBase(WeirdThings.MODID, "dirt_shovel", WeirdThings.TAB, ModToolMaterial.DIRT, 1.5f, -3f, ModRarities.WHITE, false, 0);
     public static final Item DIRT_PICKAXE = new ModItemPickaxeBase(WeirdThings.MODID, "dirt_pickaxe", WeirdThings.TAB, ModToolMaterial.DIRT, -1f, -2.8f, ModRarities.WHITE, false, 0);
-    public static final Item DIRT_AXE = new ModItemAxeBase(WeirdThings.MODID, "dirt_axe", WeirdThings.TAB, ModToolMaterial.DIRT,8f, -3.2f, ModRarities.WHITE, false, 0);
+    public static final Item DIRT_AXE = new ModItemAxeBase(WeirdThings.MODID, "dirt_axe", WeirdThings.TAB, ModToolMaterial.DIRT, 6f, -3.2f, ModRarities.WHITE, false, 0);
     public static final Item DIRT_HOE = new ModItemHoeBase(WeirdThings.MODID, "dirt_hoe", WeirdThings.TAB, ModToolMaterial.DIRT, 2f, -1f, ModRarities.WHITE, false, 0);
 
     public static final Item COOKIE_HELMET = new ModItemArmorBase(WeirdThings.MODID, "cookie_helmet", WeirdThings.TAB, ModArmorMaterial.COOKIE, 0, EntityEquipmentSlot.HEAD, ModRarities.WHITE, false, 0);
