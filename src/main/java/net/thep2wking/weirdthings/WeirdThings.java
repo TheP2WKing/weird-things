@@ -73,6 +73,14 @@ public class WeirdThings {
             itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "dirt_golem"));
             itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "continuously_turning_pig"));
             itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "very_weird_pig"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "chickow"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "rapig"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "skelepig"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "villager_pig"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "pig_villager"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "cow_villager"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "potionstorm_witch"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "flower_pig"));
         }
     };
 

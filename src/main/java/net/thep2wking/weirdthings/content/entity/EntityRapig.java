@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.passive.EntityPig;
+import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
@@ -15,16 +15,21 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
-public class EntityVeryWeirdPig extends EntityPig {
-	public EntityVeryWeirdPig(World worldIn) {
+public class EntityRapig extends EntityRabbit {
+	public EntityRapig(World worldIn) {
 		super(worldIn);
-        this.setSize(0.9F, 2.1F);
+        this.setSize(0.9F, 0.9F);
 	}
 
 	@Override
 	public void applyEntityAttributes() {
 		super.applyEntityAttributes();
 		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(8);
+	}
+
+	@Override
+	public SoundEvent getJumpSound() {
+		return SoundEvents.ENTITY_RABBIT_JUMP;
 	}
 
 	@Override
@@ -55,12 +60,12 @@ public class EntityVeryWeirdPig extends EntityPig {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/very_weird_pig");
+		return new ResourceLocation(WeirdThings.MODID, "entities/rapig");
 	}
 
 	@Override
-	public EntityVeryWeirdPig createChild(EntityAgeable ageable) {
-		return new EntityVeryWeirdPig(this.world);
+	public EntityRapig createChild(EntityAgeable ageable) {
+		return new EntityRapig(this.world);
 	}
 
 	@Override

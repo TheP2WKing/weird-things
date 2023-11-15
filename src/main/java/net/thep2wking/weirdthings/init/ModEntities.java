@@ -4,20 +4,30 @@ import net.thep2wking.reloadedlib.util.ModRegistryHelper;
 import net.thep2wking.weirdthings.WeirdThings;
 import net.thep2wking.weirdthings.content.entity.EntityArmedCreeper;
 import net.thep2wking.weirdthings.content.entity.EntityArrowstormSkeleton;
+import net.thep2wking.weirdthings.content.entity.EntityChickenGhast;
+import net.thep2wking.weirdthings.content.entity.EntityChickow;
 import net.thep2wking.weirdthings.content.entity.EntityContinuouslyTurningPig;
 import net.thep2wking.weirdthings.content.entity.EntityCookieMonster;
+import net.thep2wking.weirdthings.content.entity.EntityCowVillager;
 import net.thep2wking.weirdthings.content.entity.EntityCreeperChicken;
 import net.thep2wking.weirdthings.content.entity.EntityCrossyRoadChicken;
 import net.thep2wking.weirdthings.content.entity.EntityDirtChicken;
 import net.thep2wking.weirdthings.content.entity.EntityDirtGolem;
 import net.thep2wking.weirdthings.content.entity.EntityEnderVillager;
 import net.thep2wking.weirdthings.content.entity.EntityFatChicken;
+import net.thep2wking.weirdthings.content.entity.EntityFlowerPig;
 import net.thep2wking.weirdthings.content.entity.EntityHotdog;
+import net.thep2wking.weirdthings.content.entity.EntityPigVillager;
+import net.thep2wking.weirdthings.content.entity.EntityPotionstormWitch;
+import net.thep2wking.weirdthings.content.entity.EntityRapig;
+import net.thep2wking.weirdthings.content.entity.EntitySkelepig;
+import net.thep2wking.weirdthings.content.entity.EntitySquidGhast;
 import net.thep2wking.weirdthings.content.entity.EntityVeryWeirdPig;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerBlaze;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerChicken;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerDragon;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerGhast;
+import net.thep2wking.weirdthings.content.entity.EntityVillagerPig;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerWither;
 import net.thep2wking.weirdthings.content.entity.EntityWitherGirl;
 
@@ -42,5 +52,16 @@ public class ModEntities {
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "dirt_golem", WeirdThings.INSTANCE, id++, EntityDirtGolem.class, 80, 3, false, 0xdbcdc2, 0x7e593d);
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "continuously_turning_pig", WeirdThings.INSTANCE, id++, EntityContinuouslyTurningPig.class, 80, 3, false, 0xdb635f, 0xf0a5a2);
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "very_weird_pig", WeirdThings.INSTANCE, id++, EntityVeryWeirdPig.class, 80, 3, false, 0xf0a5a2, 0xf13d39);
+		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "chickow", WeirdThings.INSTANCE, id++, EntityChickow.class, 80, 3, false, 0x443626, 0xff0000);
+		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "rapig", WeirdThings.INSTANCE, id++, EntityRapig.class, 80, 3, false, 0xf0a5a2, 0x734831);
+		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "skelepig", WeirdThings.INSTANCE, id++, EntitySkelepig.class, 80, 3, false, 0xf0a5a2, 0x494949);
+		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "villager_pig", WeirdThings.INSTANCE, id++, EntityVillagerPig.class, 80, 3, false, 0xf0a5a2, 0xbd8b72);
+		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "pig_villager", WeirdThings.INSTANCE, id++, EntityPigVillager.class, 80, 3, false, 0x563c33, 0xdb635f);
+		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "cow_villager", WeirdThings.INSTANCE, id++, EntityCowVillager.class, 80, 3, false, 0x563c33, 0xa1a1a1);
+		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "potionstorm_witch", WeirdThings.INSTANCE, id++, EntityPotionstormWitch.class, 80, 3, false, 0xa83131, 0x933f00);
+		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "flower_pig", WeirdThings.INSTANCE, id++, EntityFlowerPig.class, 80, 3, false, 0xf0a5a2, 0xfcfc00);
+		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "squid_ghast", WeirdThings.INSTANCE, id++, EntitySquidGhast.class, 80, 3, false, 0x223b4d, 0xbcbcbc);
+		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "chicken_ghast", WeirdThings.INSTANCE, id++, EntityChickenGhast.class, 80, 3, false, 0xa1a1a1, 0xbcbcbc);
+	
 	}
 }

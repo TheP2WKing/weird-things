@@ -2,6 +2,7 @@ package net.thep2wking.weirdthings.content.model;
 
 import org.lwjgl.opengl.GL11;
 
+import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelPig;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
@@ -11,6 +12,7 @@ public class ModelVeryWeirdPig extends ModelPig {
     private ModelRenderer body;
     private ModelRenderer rightArm;
     private ModelRenderer head;
+    private ModelRenderer nose;
     private ModelRenderer leftArm;
     private ModelRenderer np1;
     private ModelRenderer np2;
@@ -140,6 +142,12 @@ public class ModelVeryWeirdPig extends ModelPig {
         this.leftLeg4.setTextureSize(64, 32);
         this.leftLeg4.mirror = true;
         this.setRotation(this.leftLeg4, 0.3054326f, 0.0f, -0.3054326f);
+        this.nose = new ModelRenderer((ModelBase)this, 8, 16);
+        this.nose.addBox(-2.0f, -1.5f, -1.0f, 4, 3, 1);
+        this.nose.setRotationPoint(0.0f, -2.5f, -8.0f);
+        this.nose.mirror = true;
+        this.setRotation(this.nose, 0.0f, 0.0f, 0.0f);
+        this.head.addChild(this.nose);
     }
 
     @Override

@@ -6,7 +6,7 @@ import net.minecraft.block.Block;
 import net.minecraft.entity.EntityAgeable;
 import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.passive.EntityPig;
+import net.minecraft.entity.passive.EntityCow;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.ResourceLocation;
@@ -15,10 +15,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
-public class EntityVeryWeirdPig extends EntityPig {
-	public EntityVeryWeirdPig(World worldIn) {
+public class EntityChickow extends EntityCow {
+	public EntityChickow(World worldIn) {
 		super(worldIn);
-        this.setSize(0.9F, 2.1F);
+		this.setSize(0.9F, 1.95F);
 	}
 
 	@Override
@@ -29,22 +29,22 @@ public class EntityVeryWeirdPig extends EntityPig {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return SoundEvents.ENTITY_PIG_AMBIENT;
+		return SoundEvents.ENTITY_CHICKEN_AMBIENT;
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource damageSourceIn) {
-		return SoundEvents.ENTITY_PIG_HURT;
+		return SoundEvents.ENTITY_CHICKEN_HURT;
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return SoundEvents.ENTITY_PIG_DEATH;
+		return SoundEvents.ENTITY_CHICKEN_DEATH;
 	}
 
 	@Override
 	public void playStepSound(BlockPos pos, Block blockIn) {
-		this.playSound(SoundEvents.ENTITY_PIG_STEP, 0.15F, 1.0F);
+		this.playSound(SoundEvents.ENTITY_CHICKEN_STEP, 0.15F, 1.0F);
 	}
 
 	@Override
@@ -55,12 +55,12 @@ public class EntityVeryWeirdPig extends EntityPig {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/very_weird_pig");
+		return new ResourceLocation(WeirdThings.MODID, "entities/chickow");
 	}
 
 	@Override
-	public EntityVeryWeirdPig createChild(EntityAgeable ageable) {
-		return new EntityVeryWeirdPig(this.world);
+	public EntityChickow createChild(EntityAgeable ageable) {
+		return new EntityChickow(this.world);
 	}
 
 	@Override
