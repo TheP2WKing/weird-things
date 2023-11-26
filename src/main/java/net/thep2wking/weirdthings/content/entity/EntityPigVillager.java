@@ -13,10 +13,10 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
-public class EntityPigVillager extends EntityVillager{
+public class EntityPigVillager extends EntityVillager {
 	public EntityPigVillager(World worldIn) {
 		super(worldIn);
-        this.setSize(0.7F, 1.9F);
+		this.setSize(0.7F, 1.9F);
 	}
 
 	@Override
@@ -27,7 +27,7 @@ public class EntityPigVillager extends EntityVillager{
 
 	@Override
 	public SoundEvent getAmbientSound() {
-        return this.isTrading() ? SoundEvents.ENTITY_VILLAGER_TRADING : SoundEvents.ENTITY_PIG_AMBIENT;
+		return this.isTrading() ? SoundEvents.ENTITY_VILLAGER_TRADING : SoundEvents.ENTITY_PIG_AMBIENT;
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class EntityPigVillager extends EntityVillager{
 
 	@Override
 	public float getEyeHeight() {
-        return this.isChild() ? 0.86F : 1.67F;
+		return this.isChild() ? 0.86F : 1.67F;
 	}
 
 	@Override

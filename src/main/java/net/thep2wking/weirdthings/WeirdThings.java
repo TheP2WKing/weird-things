@@ -81,6 +81,13 @@ public class WeirdThings {
             itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "cow_villager"));
             itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "potionstorm_witch"));
             itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "flower_pig"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "battle_sheep"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "enderman_chicken"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "squid_blaze"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "crueatus"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "villager_spider"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "tnt_creeper"));
+            itemList.add(ModNBTUtil.addSpawnEgg(WeirdThings.PREFIX + "rainbow_villager"));
         }
     };
 

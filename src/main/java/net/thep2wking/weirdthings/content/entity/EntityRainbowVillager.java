@@ -13,10 +13,10 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
-public class EntityCowVillager extends EntityVillager {
-	public EntityCowVillager(World worldIn) {
+public class EntityRainbowVillager extends EntityVillager {
+	public EntityRainbowVillager(World worldIn) {
 		super(worldIn);
-		this.setSize(0.7F, 2.35F);
+		this.setSize(0.6F, 1.95F);
 	}
 
 	@Override
@@ -27,17 +27,17 @@ public class EntityCowVillager extends EntityVillager {
 
 	@Override
 	public SoundEvent getAmbientSound() {
-		return this.isTrading() ? SoundEvents.ENTITY_VILLAGER_TRADING : SoundEvents.ENTITY_COW_AMBIENT;
+		return this.isTrading() ? SoundEvents.ENTITY_VILLAGER_TRADING : SoundEvents.ENTITY_VILLAGER_AMBIENT;
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource damageSourceIn) {
-		return SoundEvents.ENTITY_COW_HURT;
+		return SoundEvents.ENTITY_VILLAGER_HURT;
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return SoundEvents.ENTITY_COW_DEATH;
+		return SoundEvents.ENTITY_VILLAGER_DEATH;
 	}
 
 	@Override
@@ -48,16 +48,11 @@ public class EntityCowVillager extends EntityVillager {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/cow_villager");
+		return new ResourceLocation(WeirdThings.MODID, "entities/rainbow_villager");
 	}
 
 	@Override
-	public float getEyeHeight() {
-		return this.isChild() ? 1.21F : 2.02F;
-	}
-
-	@Override
-	public EntityCowVillager createChild(EntityAgeable ageable) {
-		return new EntityCowVillager(this.world);
+	public EntityRainbowVillager createChild(EntityAgeable ageable) {
+		return new EntityRainbowVillager(this.world);
 	}
 }
