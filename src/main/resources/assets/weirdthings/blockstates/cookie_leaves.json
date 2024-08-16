@@ -1,0 +1,25 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "weirdthings:cookie_leaves"
+        },
+        "check_decay=true,decayable=false": 
+        { 
+            "model": "weirdthings:cookie_leaves"
+        },
+        "check_decay=false,decayable=true": 
+        { 
+            "model": "weirdthings:cookie_leaves"
+        },
+        "check_decay=true,decayable=true": 
+        { 
+            "model": "weirdthings:cookie_leaves"
+        },
+        "check_decay=false,decayable=false": 
+        { 
+            "model": "weirdthings:cookie_leaves"
+        }
+    }
+}

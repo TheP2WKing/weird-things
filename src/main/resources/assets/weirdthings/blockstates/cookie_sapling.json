@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        {
+            "model": "weirdthings:cookie_sapling"
+        },
+        "stage=0": 
+        {
+            "model": "weirdthings:cookie_sapling"
+        },
+        "stage=1":
+        {
+            "model": "weirdthings:cookie_sapling"
+        }
+    }
+}

@@ -14,8 +14,14 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityVillagerBlaze extends EntityBlaze {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID,
+			"entities/villager_blaze");
+	public static final int EXPERIENCE_VALUE = 10;
+
 	public EntityVillagerBlaze(World worldIn) {
 		super(worldIn);
+		this.setSize(0.75f, 1.85f);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -47,7 +53,7 @@ public class EntityVillagerBlaze extends EntityBlaze {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/villager_blaze");
+		return LOOT_TABLE;
 	}
 
 	@Override

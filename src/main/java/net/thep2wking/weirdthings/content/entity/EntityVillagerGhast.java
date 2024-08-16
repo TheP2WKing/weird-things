@@ -13,9 +13,14 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityVillagerGhast extends EntityGhast {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID,
+			"entities/villager_ghast");
+	public static final int EXPERIENCE_VALUE = 5;
+
 	public EntityVillagerGhast(World worldIn) {
 		super(worldIn);
 		this.setSize(4.0F, 5.0F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -47,7 +52,7 @@ public class EntityVillagerGhast extends EntityGhast {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/villager_ghast");
+		return LOOT_TABLE;
 	}
 
 	@Override

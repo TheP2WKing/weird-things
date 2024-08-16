@@ -21,12 +21,12 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.thep2wking.reloadedlib.api.item.ModItemBase;
+import net.thep2wking.oedldoedlcore.api.item.ModItemBase;
 
 public class ItemFire extends ModItemBase {
-	public ItemFire(String modid, String name, CreativeTabs tab, EnumRarity rarity, boolean hasEffect,
-			int tooltipLines) {
-		super(modid, name, tab, rarity, hasEffect, tooltipLines);
+	public ItemFire(String modid, String name, CreativeTabs tab, EnumRarity rarity, boolean hasEffect, int tooltipLines,
+			int annotationLines) {
+		super(modid, name, tab, rarity, hasEffect, tooltipLines, annotationLines);
 	}
 
 	@Override

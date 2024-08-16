@@ -45,10 +45,13 @@ import net.thep2wking.weirdthings.WeirdThings;
 import net.thep2wking.weirdthings.init.ModSounds;
 
 public class EntityWitherGirl extends EntityWither {
+    public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID, "entities/wither_girl");
+    public static final int EXPERIENCE_VALUE = 1000;
+
     private final int[] nextHeadUpdate = new int[2];
     private final int[] idleHeadUpdates = new int[2];
     private final BossInfoServer bossInfoNew = (BossInfoServer) (new BossInfoServer(this.getDisplayName(),
-            BossInfo.Color.PURPLE, BossInfo.Overlay.PROGRESS)).setDarkenSky(true);
+            BossInfo.Color.PINK, BossInfo.Overlay.PROGRESS)).setDarkenSky(true);
     private static final Predicate<Entity> ATTACKED_ENTITIES = new Predicate<Entity>() {
         public boolean apply(@Nullable Entity entity) {
             return entity instanceof EntityLivingBase
@@ -61,8 +64,8 @@ public class EntityWitherGirl extends EntityWither {
     public EntityWitherGirl(World worldIn) {
         super(worldIn);
         this.setSize(0.9F, 4F);
+        this.experienceValue = EXPERIENCE_VALUE;
         this.isImmuneToFire = true;
-        this.experienceValue = 500;
     }
 
     @Override
@@ -116,7 +119,7 @@ public class EntityWitherGirl extends EntityWither {
     @Nullable
     @Override
     public ResourceLocation getLootTable() {
-        return new ResourceLocation(WeirdThings.MODID, "entities/wither_girl");
+        return LOOT_TABLE;
     }
 
     @Override
@@ -184,8 +187,7 @@ public class EntityWitherGirl extends EntityWither {
     }
 
     @Override
-    public void onLivingUpdate()
-    {
+    public void onLivingUpdate() {
         super.onLivingUpdate();
         this.motionY *= 1.67;
     }

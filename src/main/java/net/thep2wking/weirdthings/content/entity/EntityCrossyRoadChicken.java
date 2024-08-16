@@ -17,9 +17,14 @@ import net.thep2wking.weirdthings.WeirdThings;
 import net.thep2wking.weirdthings.init.ModItems;
 
 public class EntityCrossyRoadChicken extends EntityChicken {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID,
+			"entities/crossy_road_chicken");
+	public static final int EXPERIENCE_VALUE = 0;
+
 	public EntityCrossyRoadChicken(World worldIn) {
 		super(worldIn);
 		this.setSize(0.5F, 1.2F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -56,7 +61,7 @@ public class EntityCrossyRoadChicken extends EntityChicken {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/crossy_road_chicken");
+		return LOOT_TABLE;
 	}
 
 	public void fall(float distance, float damageMultiplier) {

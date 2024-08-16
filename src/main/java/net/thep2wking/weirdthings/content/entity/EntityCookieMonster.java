@@ -15,9 +15,14 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityCookieMonster extends EntityZombie {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID,
+			"entities/cookie_monster");
+	public static final int EXPERIENCE_VALUE = 5;
+
 	public EntityCookieMonster(World worldIn) {
 		super(worldIn);
 		this.setSize(0.6F, 1.95F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -60,7 +65,7 @@ public class EntityCookieMonster extends EntityZombie {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/cookie_monster");
+		return LOOT_TABLE;
 	}
 
 	@Override

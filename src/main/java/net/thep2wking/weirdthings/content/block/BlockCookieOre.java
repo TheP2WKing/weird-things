@@ -9,8 +9,8 @@ import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
-import net.thep2wking.reloadedlib.api.block.ModBlockOreBase;
-import net.thep2wking.reloadedlib.util.ModToolTypes;
+import net.thep2wking.oedldoedlcore.api.block.ModBlockOreBase;
+import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 
 public class BlockCookieOre extends ModBlockOreBase {
 	public BlockCookieOre(String modid, String name, CreativeTabs tab, int minXp, int maxXp, Material material,

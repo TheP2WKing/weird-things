@@ -1,8 +1,8 @@
 package net.thep2wking.weirdthings.registry;
 
 import net.minecraft.init.Items;
-import net.thep2wking.reloadedlib.util.ModLogger;
-import net.thep2wking.reloadedlib.util.ModRecipeHelper;
+import net.thep2wking.oedldoedlcore.util.ModLogger;
+import net.thep2wking.oedldoedlcore.util.ModRecipeHelper;
 import net.thep2wking.weirdthings.WeirdThings;
 import net.thep2wking.weirdthings.init.ModBlocks;
 import net.thep2wking.weirdthings.init.ModItems;
@@ -22,26 +22,20 @@ public class ModOreDict {
 
 		ModRecipeHelper.addOreDict("grass", ModBlocks.COOKIE_GRASS, 0);
 		ModRecipeHelper.addOreDict("dirt", ModBlocks.COOKIE_DIRT, 0);
-		ModRecipeHelper.addOreDict("logWood", ModBlocks.COOKIE_LOG, 0);
 		ModRecipeHelper.addOreDict("plankWood", ModBlocks.COOKIE_PLANKS, 0);
 
 		ModRecipeHelper.addOreDict("grass", ModBlocks.CHICKEN_GRASS, 0);
 		ModRecipeHelper.addOreDict("dirt", ModBlocks.CHICKEN_DIRT, 0);
-		ModRecipeHelper.addOreDict("logWood", ModBlocks.CHICKEN_LOG, 0);
 		ModRecipeHelper.addOreDict("plankWood", ModBlocks.CHICKEN_PLANKS, 0);
 
 		ModRecipeHelper.addOreDict("tntMega", ModBlocks.MEGA_TNT, 0);
 
 		ModRecipeHelper.addOreDict("chest", ModBlocks.CHICKEN_CHEST, 0);
 		ModRecipeHelper.addOreDict("chestChicken", ModBlocks.CHICKEN_CHEST, 0);
-		ModRecipeHelper.addOreDict("chestWood", ModBlocks.CHICKEN_CHEST, 0);
 		ModRecipeHelper.addOreDict("chest", ModBlocks.TRAPPED_CHICKEN_CHEST, 0);
-		ModRecipeHelper.addOreDict("chestChicken", ModBlocks.TRAPPED_CHICKEN_CHEST, 0);
-		ModRecipeHelper.addOreDict("chestTrapped", ModBlocks.TRAPPED_CHICKEN_CHEST, 0);
+		ModRecipeHelper.addOreDict("chestChickenTrapped", ModBlocks.TRAPPED_CHICKEN_CHEST, 0);
 
 		ModRecipeHelper.addOreDict("fire", ModItems.FIRE, 0);
-
-		ModRecipeHelper.addOreDict("stickBlaze", Items.BLAZE_ROD, 0);
 
 		ModRecipeHelper.addOreDict("gemCookie", Items.COOKIE, 0);
 		ModRecipeHelper.addOreDict("ingotCookie", ModItems.COOKIE_INGOT, 0);

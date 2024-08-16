@@ -16,9 +16,13 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityRapig extends EntityRabbit {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID, "entities/rapig");
+	public static final int EXPERIENCE_VALUE = 0;
+
 	public EntityRapig(World worldIn) {
 		super(worldIn);
-        this.setSize(0.9F, 0.9F);
+		this.setSize(0.9F, 0.9F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -60,7 +64,7 @@ public class EntityRapig extends EntityRabbit {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/rapig");
+		return LOOT_TABLE;
 	}
 
 	@Override

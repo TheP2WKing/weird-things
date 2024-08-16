@@ -14,9 +14,14 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityRainbowVillager extends EntityVillager {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID,
+			"entities/rainbow_villager");
+	public static final int EXPERIENCE_VALUE = 0;
+
 	public EntityRainbowVillager(World worldIn) {
 		super(worldIn);
 		this.setSize(0.6F, 1.95F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -48,7 +53,7 @@ public class EntityRainbowVillager extends EntityVillager {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/rainbow_villager");
+		return LOOT_TABLE;
 	}
 
 	@Override

@@ -1,6 +1,9 @@
 # creative tabs
 itemGroup.weirdthings.name=Weird Things Reloaded
 
+# join message
+join.weirdthingsreloaded.message=Mob combinations never seen before!
+
 # blocks
 tile.weirdthings.cookie_ore.name=Cookie Ore
 tile.weirdthings.ruby_ore.name=Ruby Ore
@@ -15,11 +18,15 @@ tile.weirdthings.cookie_grass.name=Cookie Grass
 tile.weirdthings.cookie_dirt.name=Cookie Dirt
 tile.weirdthings.cookie_log.name=Cookie Log
 tile.weirdthings.cookie_planks.name=Cookie Planks
+tile.weirdthings.cookie_leaves.name=Cookie Leaves
+tile.weirdthings.cookie_sapling.name=Cookie Sapling
 
 tile.weirdthings.chicken_grass.name=Chicken Grass
 tile.weirdthings.chicken_dirt.name=Chicken Dirt
 tile.weirdthings.chicken_log.name=Chicken Log
 tile.weirdthings.chicken_planks.name=Chicken Planks
+tile.weirdthings.chicken_leaves.name=Chicken Leaves
+tile.weirdthings.chicken_sapling.name=Chicken Sapling
 
 tile.weirdthings.mega_tnt.name=Mega TNT
 
@@ -72,7 +79,10 @@ item.weirdthings.villager_axe.name=Villager Axe
 item.weirdthings.villager_hoe.name=Villager Hoe
 
 # entities
+entity.weirdthings.mega_tnt.name=Primed Mega TNT
+
 entity.weirdthings.cookie_monster.name=Cookie Monster
+entity.weirdthings.cookie_connoisseur.name=Cookie Connoisseur
 entity.weirdthings.arrowstorm_skeleton.name=Arrowstorm Skeleton
 entity.weirdthings.armed_creeper.name=Armed Creeper
 entity.weirdthings.creeper_chicken.name=Creeper Chicken
@@ -107,3 +117,7 @@ entity.weirdthings.crueatus.name=Crueatus
 entity.weirdthings.villager_spider.name=Villager Spider
 entity.weirdthings.tnt_creeper.name=TNT Creeper
 entity.weirdthings.rainbow_villager.name=Rainbow Villager
+entity.weirdthings.flying_pig.name=Flying Pig
+entity.weirdthings.flying_squid.name=Flying Squid
+entity.weirdthings.flying_slime.name=Flying Slime
+entity.weirdthings.slimy_sheep.name=Slimy Sheep

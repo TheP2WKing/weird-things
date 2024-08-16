@@ -33,11 +33,15 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityCrueatus extends EntityPig {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID, "entities/crueatus");
+	public static final int EXPERIENCE_VALUE = 0;
+
 	private static final Set<Item> TEMPTATION_ITEMS = Sets.newHashSet(Items.BLAZE_ROD);
 
 	public EntityCrueatus(World worldIn) {
 		super(worldIn);
 		this.setSize(0.6f, 1.75f);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -47,7 +51,7 @@ public class EntityCrueatus extends EntityPig {
 	}
 
 	@Override
-	protected void initEntityAI() {
+	public void initEntityAI() {
 		this.tasks.addTask(0, new EntityAISwimming(this));
 		this.tasks.addTask(1, new EntityAIPanic(this, 1.25D));
 		this.tasks.addTask(3, new EntityAIMate(this, 1.0D));
@@ -86,7 +90,7 @@ public class EntityCrueatus extends EntityPig {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/crueatus");
+		return LOOT_TABLE;
 	}
 
 	@Override

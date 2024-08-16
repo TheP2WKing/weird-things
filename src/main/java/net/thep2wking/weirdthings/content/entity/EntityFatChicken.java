@@ -16,9 +16,13 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityFatChicken extends EntityChicken {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID, "entities/fat_chicken");
+	public static final int EXPERIENCE_VALUE = 0;
+
 	public EntityFatChicken(World worldIn) {
 		super(worldIn);
-        this.setSize(1.0f, 1.4f);
+		this.setSize(1.0f, 1.4f);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -55,7 +59,7 @@ public class EntityFatChicken extends EntityChicken {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/fat_chicken");
+		return LOOT_TABLE;
 	}
 
 	public void fall(float distance, float damageMultiplier) {

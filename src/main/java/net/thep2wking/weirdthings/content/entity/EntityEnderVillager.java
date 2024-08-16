@@ -17,11 +17,16 @@ import net.minecraftforge.event.entity.living.EnderTeleportEvent;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityEnderVillager extends EntityEnderman {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID,
+			"entities/ender_villager");
+	public static final int EXPERIENCE_VALUE = 10;
+
 	public int lastCreepySound;
 
 	public EntityEnderVillager(World worldIn) {
 		super(worldIn);
 		this.setSize(0.6F, 2.09F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -53,7 +58,7 @@ public class EntityEnderVillager extends EntityEnderman {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/ender_villager");
+		return LOOT_TABLE;
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 package net.thep2wking.weirdthings.init;
 
 import net.minecraft.util.SoundEvent;
-import net.thep2wking.reloadedlib.api.sound.ModSoundEventBase;
+import net.thep2wking.oedldoedlcore.api.sound.ModSoundEventBase;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class ModSounds {

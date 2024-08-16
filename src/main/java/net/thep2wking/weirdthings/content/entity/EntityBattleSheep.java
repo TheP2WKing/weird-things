@@ -33,11 +33,14 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityBattleSheep extends EntityMob {
+    public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID, "entities/battle_sheep");
+    public static final int EXPERIENCE_VALUE = 10;
+
     public EntityBattleSheep(World worldIn) {
         super(worldIn);
         this.setSize(0.9F, 1.3F);
+        this.experienceValue = EXPERIENCE_VALUE;
         this.isImmuneToFire = true;
-        this.experienceValue = 10;
     }
 
     @Override
@@ -72,7 +75,7 @@ public class EntityBattleSheep extends EntityMob {
     @Nullable
     @Override
     public ResourceLocation getLootTable() {
-        return new ResourceLocation(WeirdThings.MODID, "entities/battle_sheep");
+        return LOOT_TABLE;
     }
 
     @Override
@@ -187,7 +190,6 @@ public class EntityBattleSheep extends EntityMob {
         }
 
         @Override
-        @SuppressWarnings("null")
         public void updateTask() {
             --this.attackTime;
             EntityLivingBase entitylivingbase = this.blaze.getAttackTarget();

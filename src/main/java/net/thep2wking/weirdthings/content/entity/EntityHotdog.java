@@ -17,9 +17,13 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityHotdog extends EntityWolf {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID, "entities/hotdog");
+	public static final int EXPERIENCE_VALUE = 0;
+
 	public EntityHotdog(World worldIn) {
 		super(worldIn);
 		this.setSize(0.6F, 0.85F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -50,7 +54,7 @@ public class EntityHotdog extends EntityWolf {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/hotdog");
+		return LOOT_TABLE;
 	}
 
 	@Override

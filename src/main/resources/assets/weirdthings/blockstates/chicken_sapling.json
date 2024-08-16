@@ -1,0 +1,17 @@
+{
+    "variants": 
+    {
+        "normal": 
+        {
+            "model": "weirdthings:chicken_sapling"
+        },
+        "stage=0": 
+        {
+            "model": "weirdthings:chicken_sapling"
+        },
+        "stage=1":
+        {
+            "model": "weirdthings:chicken_sapling"
+        }
+    }
+}

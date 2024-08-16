@@ -8,8 +8,8 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
-import net.thep2wking.reloadedlib.api.block.ModBlockOreBase;
-import net.thep2wking.reloadedlib.util.ModToolTypes;
+import net.thep2wking.oedldoedlcore.api.block.ModBlockOreBase;
+import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.weirdthings.init.ModItems;
 
 public class BlockFireOre extends ModBlockOreBase {
@@ -23,10 +23,5 @@ public class BlockFireOre extends ModBlockOreBase {
 	@Override
 	public Item getItemDropped(IBlockState state, Random rand, int fortune) {
 		return ModItems.FIRE;
-	}
-
-	@Override
-	public int quantityDropped(Random rand) {
-		return 1;
 	}
 }

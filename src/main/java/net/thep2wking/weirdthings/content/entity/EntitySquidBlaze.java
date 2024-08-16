@@ -13,9 +13,13 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntitySquidBlaze extends EntityBlaze {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID, "entities/squid_blaze");
+	public static final int EXPERIENCE_VALUE = 10;
+
 	public EntitySquidBlaze(World worldIn) {
 		super(worldIn);
 		this.setSize(0.75f, 1.85f);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -47,7 +51,7 @@ public class EntitySquidBlaze extends EntityBlaze {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/squid_blaze");
+		return LOOT_TABLE;
 	}
 
 	@Override

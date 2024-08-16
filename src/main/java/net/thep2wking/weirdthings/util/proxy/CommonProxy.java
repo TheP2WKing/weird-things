@@ -13,4 +13,7 @@ public class CommonProxy {
 
 	public void postInit(FMLPostInitializationEvent event) {
 	}
+
+	public void render() {
+	}
 }

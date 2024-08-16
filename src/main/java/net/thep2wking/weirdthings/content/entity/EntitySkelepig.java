@@ -13,9 +13,13 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntitySkelepig extends EntitySkeleton {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID, "entities/skelepig");
+	public static final int EXPERIENCE_VALUE = 5;
+
 	public EntitySkelepig(World worldIn) {
 		super(worldIn);
-        this.setSize(0.9F, 0.9F);
+		this.setSize(0.9F, 0.9F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -47,7 +51,7 @@ public class EntitySkelepig extends EntitySkeleton {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/skelepig");
+		return LOOT_TABLE;
 	}
 
 	@Override

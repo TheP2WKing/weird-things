@@ -18,6 +18,7 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityChest;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.datafix.DataFixer;
 import net.minecraft.util.datafix.FixTypes;
@@ -26,9 +27,11 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.VanillaDoubleChestItemHandler;
+import net.thep2wking.weirdthings.WeirdThings;
 import net.thep2wking.weirdthings.content.block.BlockChickenChest;
 
 public class TileChickenChest extends TileEntityChest {
@@ -45,6 +48,11 @@ public class TileChickenChest extends TileEntityChest {
 	private BlockChickenChest.Type cachedChestType;
 
 	public TileChickenChest() {
+	}
+
+	public static void registerTileChickenChest() {
+		GameRegistry.registerTileEntity(TileChickenChest.class,
+				new ResourceLocation(WeirdThings.MODID, "chicken_chest"));
 	}
 
 	public TileChickenChest(BlockChickenChest.Type typeIn) {
@@ -119,13 +127,11 @@ public class TileChickenChest extends TileEntityChest {
 		} else if (this.adjacentChestChecked) {
 			switch (side) {
 				case NORTH:
-
 					if (this.adjacentChestZNeg != chestTe) {
 						this.adjacentChestChecked = false;
 					}
 					break;
 				case SOUTH:
-
 					if (this.adjacentChestZPos != chestTe) {
 						this.adjacentChestChecked = false;
 					}

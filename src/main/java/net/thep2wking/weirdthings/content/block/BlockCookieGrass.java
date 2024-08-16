@@ -12,12 +12,15 @@ import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.util.BlockRenderLayer;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
+import net.minecraftforge.common.IPlantable;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.thep2wking.reloadedlib.api.block.ModBlockBase;
-import net.thep2wking.reloadedlib.util.ModToolTypes;
+import net.thep2wking.oedldoedlcore.api.block.ModBlockBase;
+import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.weirdthings.init.ModBlocks;
 
 public class BlockCookieGrass extends ModBlockBase implements IGrowable {
@@ -68,6 +71,12 @@ public class BlockCookieGrass extends ModBlockBase implements IGrowable {
 
 	@Override
 	public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, IBlockState state) {
+		return true;
+	}
+
+	@Override
+	public boolean canSustainPlant(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing direction,
+			IPlantable plantable) {
 		return true;
 	}
 

@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross",
+    "textures": 
+    {
+        "cross": "weirdthings:blocks/chicken_sapling"
+    }
+}

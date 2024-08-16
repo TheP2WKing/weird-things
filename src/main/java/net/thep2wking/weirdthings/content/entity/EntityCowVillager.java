@@ -14,9 +14,13 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityCowVillager extends EntityVillager {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID, "entities/cow_villager");
+	public static final int EXPERIENCE_VALUE = 0;
+
 	public EntityCowVillager(World worldIn) {
 		super(worldIn);
 		this.setSize(0.7F, 2.35F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -48,7 +52,7 @@ public class EntityCowVillager extends EntityVillager {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/cow_villager");
+		return LOOT_TABLE;
 	}
 
 	@Override
@@ -59,5 +63,14 @@ public class EntityCowVillager extends EntityVillager {
 	@Override
 	public EntityCowVillager createChild(EntityAgeable ageable) {
 		return new EntityCowVillager(this.world);
+	}
+
+	@Override
+	public void onDeathUpdate() {
+		if (this.deathTime == 20) {
+			this.setDead();
+		} else {
+			++this.deathTime;
+		}
 	}
 }

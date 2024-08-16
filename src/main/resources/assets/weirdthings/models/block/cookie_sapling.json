@@ -1,0 +1,7 @@
+{
+    "parent": "block/cross",
+    "textures": 
+    {
+        "cross": "weirdthings:blocks/cookie_sapling"
+    }
+}

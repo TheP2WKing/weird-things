@@ -1,0 +1,26 @@
+{
+    "pools": [
+        {
+            "name": "weirdthings:slimy_sheep",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "minecraft:slime",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "name": "weirdthings:slimy_sheep",
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "name": "weirdthings:entities/slimy_sheep_sheared",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

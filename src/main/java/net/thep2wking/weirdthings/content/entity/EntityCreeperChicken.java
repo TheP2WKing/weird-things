@@ -15,11 +15,16 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityCreeperChicken extends EntityCreeper {
-	int timeUntilNextEgg = rand.nextInt(1000) + 1000;
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID,
+			"entities/creeper_chicken");
+	public static final int EXPERIENCE_VALUE = 5;
+
+	public int timeUntilNextEgg = rand.nextInt(1000) + 1000;
 
 	public EntityCreeperChicken(World worldIn) {
 		super(worldIn);
 		this.setSize(0.6F, 1.7F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
 
 	@Override
@@ -51,7 +56,7 @@ public class EntityCreeperChicken extends EntityCreeper {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/creeper_chicken");
+		return LOOT_TABLE;
 	}
 
 	@Override

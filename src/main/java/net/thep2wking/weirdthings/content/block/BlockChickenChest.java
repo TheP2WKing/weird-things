@@ -38,7 +38,7 @@ import net.minecraft.world.ILockableContainer;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.thep2wking.reloadedlib.util.ModToolTypes;
+import net.thep2wking.oedldoedlcore.util.ModToolTypes;
 import net.thep2wking.weirdthings.content.tile.TileChickenChest;
 
 public class BlockChickenChest extends BlockChest {

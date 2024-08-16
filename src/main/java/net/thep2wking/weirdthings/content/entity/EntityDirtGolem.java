@@ -15,11 +15,15 @@ import net.minecraft.world.World;
 import net.thep2wking.weirdthings.WeirdThings;
 
 public class EntityDirtGolem extends EntityIronGolem {
+	public static final ResourceLocation LOOT_TABLE = new ResourceLocation(WeirdThings.MODID, "entities/dirt_golem");
+	public static final int EXPERIENCE_VALUE = 0;
+
 	public EntityDirtGolem(World worldIn) {
 		super(worldIn);
-        this.setSize(1.4F, 2.7F);
+		this.setSize(1.4F, 2.7F);
+		this.experienceValue = EXPERIENCE_VALUE;
 	}
-	
+
 	@Override
 	public void applyEntityAttributes() {
 		super.applyEntityAttributes();
@@ -30,7 +34,6 @@ public class EntityDirtGolem extends EntityIronGolem {
 	public SoundEvent getHurtSound(DamageSource damageSourceIn) {
 		return SoundEvents.ENTITY_IRONGOLEM_HURT;
 	}
-
 
 	@Override
 	public SoundEvent getDeathSound() {
@@ -50,6 +53,6 @@ public class EntityDirtGolem extends EntityIronGolem {
 	@Nullable
 	@Override
 	public ResourceLocation getLootTable() {
-		return new ResourceLocation(WeirdThings.MODID, "entities/dirt_golem");
+		return LOOT_TABLE;
 	}
 }

@@ -1,0 +1,25 @@
+{
+    "variants": 
+    {
+        "normal": 
+        { 
+            "model": "weirdthings:chicken_leaves"
+        },
+        "check_decay=true,decayable=false": 
+        { 
+            "model": "weirdthings:chicken_leaves"
+        },
+        "check_decay=false,decayable=true": 
+        { 
+            "model": "weirdthings:chicken_leaves"
+        },
+        "check_decay=true,decayable=true": 
+        { 
+            "model": "weirdthings:chicken_leaves"
+        },
+        "check_decay=false,decayable=false": 
+        { 
+            "model": "weirdthings:chicken_leaves"
+        }
+    }
+}
