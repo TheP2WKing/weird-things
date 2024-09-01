@@ -12,7 +12,6 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.PlayerEvent.PlayerLoggedInEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import net.thep2wking.oedldoedlcore.api.integration.ModJERPluginBase;
 import net.thep2wking.oedldoedlcore.api.tab.ModCreativeTabBase;
 import net.thep2wking.oedldoedlcore.util.ModLogInUtil;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
@@ -20,7 +19,6 @@ import net.thep2wking.oedldoedlcore.util.ModReferences;
 import net.thep2wking.weirdthings.content.tile.TileChickenChest;
 import net.thep2wking.weirdthings.init.ModEntities;
 import net.thep2wking.weirdthings.init.ModItems;
-import net.thep2wking.weirdthings.integration.jer.WeirdThingsJERPlugin;
 import net.thep2wking.weirdthings.registry.ModOreDict;
 import net.thep2wking.weirdthings.registry.ModRecipes;
 import net.thep2wking.weirdthings.util.proxy.CommonProxy;
@@ -68,7 +66,6 @@ public class WeirdThings {
         ModRecipes.registerRecipes();
         ModBiomeGen.registerModBiomeGen();
         ModOreGen.registerModOredGen();
-        ModJERPluginBase.registerPlugin(new WeirdThingsJERPlugin());
         PROXY.render();
         PROXY.init(event);
     }
