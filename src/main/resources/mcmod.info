@@ -2,7 +2,7 @@
     {
         "modid": "weirdthings",
         "name": "Weird Things Reloaded",
-        "description": "Weird things, mobs and blocks literally everywhere!",
+        "description": "Weird things, mobs and blocks literally everywhere.",
         "version": "${version}",
         "mcversion": "${mcversion}",
         "url": "https://github.com/TheP2WKing/weird-things",

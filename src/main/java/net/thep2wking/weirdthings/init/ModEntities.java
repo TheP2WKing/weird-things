@@ -17,6 +17,7 @@ import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.init.Biomes;
 import net.minecraft.world.biome.Biome;
+import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlcore.util.ModRegistryHelper;
 import net.thep2wking.oedldoedlcore.util.world.ModBiomeUtil;
 import net.thep2wking.weirdthings.WeirdThings;
@@ -67,8 +68,9 @@ import net.thep2wking.weirdthings.content.entity.misc.EntityThrowableVillager;
 
 public class ModEntities {
 	public static void registerEntities() {
+		ModLogger.registeredEntitiesLogger(WeirdThings.MODID);
+
 		int id = 0; 
-		
 		ModRegistryHelper.registerEntity(WeirdThings.MODID, "throwable_villager", WeirdThings.INSTANCE, id++, EntityThrowableVillager.class, 64, 10, true);
 		ModRegistryHelper.registerEntity(WeirdThings.MODID, "rainbow_egg", WeirdThings.INSTANCE, id++, EntityRainbowEgg.class, 64, 10, true);
 		ModRegistryHelper.registerEntity(WeirdThings.MODID, "mega_tnt", WeirdThings.INSTANCE, id++, EntityMegaTNT.class, 160, 10, true);
