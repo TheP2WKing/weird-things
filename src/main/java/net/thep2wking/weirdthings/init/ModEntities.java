@@ -16,7 +16,6 @@ import net.minecraft.entity.passive.EntityPig;
 import net.minecraft.entity.passive.EntityRabbit;
 import net.minecraft.entity.passive.EntityWolf;
 import net.minecraft.init.Biomes;
-import net.minecraft.world.biome.Biome;
 import net.thep2wking.oedldoedlcore.util.ModLogger;
 import net.thep2wking.oedldoedlcore.util.ModRegistryHelper;
 import net.thep2wking.oedldoedlcore.util.world.ModBiomeUtil;
@@ -140,10 +139,10 @@ public class ModEntities {
 		ModRegistryHelper.registerEntitySpawn(EntityVillagerPig.class, EnumCreatureType.CREATURE, 8, 1, 3, WeirdThingsConfig.MOBS.VILLAGER_PIG, ModBiomeUtil.getBiomesWithCreatures(EntityPig.class));
 
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "pig_villager", WeirdThings.INSTANCE, id++, EntityPigVillager.class, 80, 3, false, 0x563c33, 0xdb635f);
-		ModRegistryHelper.registerEntitySpawn(EntityPigVillager.class, EnumCreatureType.CREATURE, 10, 1, 3, WeirdThingsConfig.MOBS.PIG_VILLAGER, ModBiomeUtil.getBiomesWithCreatures(EntityPig.class));
+		// ModRegistryHelper.registerEntitySpawn(EntityPigVillager.class, EnumCreatureType.CREATURE, 10, 1, 3, WeirdThingsConfig.MOBS.PIG_VILLAGER, ModBiomeUtil.getBiomesWithCreatures(EntityPig.class));
 
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "cow_villager", WeirdThings.INSTANCE, id++, EntityCowVillager.class, 80, 3, false, 0x563c33, 0xa1a1a1);
-		ModRegistryHelper.registerEntitySpawn(EntityCowVillager.class, EnumCreatureType.CREATURE, 10, 1, 3, WeirdThingsConfig.MOBS.COW_VILLAGER, ModBiomeUtil.getBiomesWithCreatures(EntityCow.class));
+		// ModRegistryHelper.registerEntitySpawn(EntityCowVillager.class, EnumCreatureType.CREATURE, 10, 1, 3, WeirdThingsConfig.MOBS.COW_VILLAGER, ModBiomeUtil.getBiomesWithCreatures(EntityCow.class));
 
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "potionstorm_witch", WeirdThings.INSTANCE, id++, EntityPotionstormWitch.class, 80, 3, false, 0xa83131, 0x933f00);
 		ModRegistryHelper.registerEntitySpawn(EntityPotionstormWitch.class, EnumCreatureType.MONSTER, 5, 1, 2, WeirdThingsConfig.MOBS.POTIONSTORM_WITCH, ModBiomeUtil.getBiomesWithMonsters(EntityWitch.class));
@@ -176,7 +175,7 @@ public class ModEntities {
 		ModRegistryHelper.registerEntitySpawn(EntityTNTCreeper.class, EnumCreatureType.MONSTER, 8, 1, 3, WeirdThingsConfig.MOBS.TNT_CREEPER, ModBiomeUtil.getBiomesWithMonsters(EntityCreeper.class));
 
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "rainbow_villager", WeirdThings.INSTANCE, id++, EntityRainbowVillager.class, 80, 3, false, 0x563c33, 0xb5677a);
-		ModRegistryHelper.registerEntitySpawn(EntityRainbowVillager.class, EnumCreatureType.CREATURE, 5, 1, 4, WeirdThingsConfig.MOBS.RAINBOW_VILLAGER, new Biome[] { Biomes.ROOFED_FOREST, Biomes.MUTATED_ROOFED_FOREST, Biomes.MUTATED_FOREST });
+		// ModRegistryHelper.registerEntitySpawn(EntityRainbowVillager.class, EnumCreatureType.CREATURE, 5, 1, 4, WeirdThingsConfig.MOBS.RAINBOW_VILLAGER, new Biome[] { Biomes.ROOFED_FOREST, Biomes.MUTATED_ROOFED_FOREST, Biomes.MUTATED_FOREST });
 
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "flying_pig", WeirdThings.INSTANCE, id++, EntityFlyingPig.class, 80, 3, false, 0x4b3e2f, 0xd3625d);
 		ModRegistryHelper.registerEntitySpawn(EntityFlyingPig.class, EnumCreatureType.AMBIENT, 8, 1, 2, WeirdThingsConfig.MOBS.FLYING_PIG, ModBiomeUtil.getBiomesWithAmbientCreatures(EntityBat.class));
