@@ -6,6 +6,7 @@ import jeresources.api.restrictions.DimensionRestriction;
 import jeresources.api.restrictions.Restriction;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.thep2wking.oedldoedlcore.api.integration.JERPlugin;
 import net.thep2wking.oedldoedlcore.api.integration.ModJERPluginBase;
 import net.thep2wking.weirdthings.WeirdThings;
 import net.thep2wking.weirdthings.config.WeirdThingsConfig;
@@ -52,6 +53,7 @@ import net.thep2wking.weirdthings.content.entity.EntityWitherGirl;
 import net.thep2wking.weirdthings.init.ModBlocks;
 import net.thep2wking.weirdthings.init.ModItems;
 
+@JERPlugin
 public class WeirdThingsJERPlugin extends ModJERPluginBase {
 	@Override
 	public String getModId() {
