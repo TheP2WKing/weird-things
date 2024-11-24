@@ -39,9 +39,4 @@ public class ModRenderHooks {
 		GlStateManager.scale(0.7, 0.7, 0.7);
 		return renderInfo;
 	};
-
-	public static final IMobRenderHook WITHER_GIRL = (renderInfo, entity) -> {
-		GlStateManager.scale(2, 2, 2);
-		return renderInfo;
-	};
 }

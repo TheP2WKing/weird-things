@@ -42,9 +42,6 @@ public class Mobs {
     @Config.Name("Villager Dragon")
     public boolean VILLAGER_DRAGON = true;
 
-    @Config.Name("Wither Girl")
-    public boolean WITHER_GIRL = true;
-
     @Config.Name("Hotdog")
     public boolean HOTDOG = true;
 

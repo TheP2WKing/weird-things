@@ -60,7 +60,6 @@ import net.thep2wking.weirdthings.content.entity.EntityVillagerGhast;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerPig;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerSpider;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerWither;
-import net.thep2wking.weirdthings.content.entity.EntityWitherGirl;
 import net.thep2wking.weirdthings.content.entity.misc.EntityMegaTNT;
 import net.thep2wking.weirdthings.content.entity.misc.EntityRainbowEgg;
 import net.thep2wking.weirdthings.content.entity.misc.EntityThrowableVillager;
@@ -109,7 +108,6 @@ public class ModEntities {
 
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "villager_wither", WeirdThings.INSTANCE, id++, EntityVillagerWither.class, 80, 3, false, 0x283c54, 0xbd8b72);
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "villager_dragon", WeirdThings.INSTANCE, id++, EntityVillagerDragon.class, 80, 3, false, 0x563c33, 0xe079fa);
-		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "wither_girl", WeirdThings.INSTANCE, id++, EntityWitherGirl.class, 80, 3, false, 0xffdac7, 0x5a4e4c);
 
 		ModRegistryHelper.registerEntityWithSpawnEgg(WeirdThings.MODID, "hotdog", WeirdThings.INSTANCE, id++, EntityHotdog.class, 80, 3, false, 0x7f3300, 0xdf9e59);
 		ModRegistryHelper.registerEntitySpawn(EntityHotdog.class, EnumCreatureType.CREATURE, 10, 1, 4, WeirdThingsConfig.MOBS.HOTDOG, ModBiomeUtil.getBiomesWithCreatures(EntityWolf.class));

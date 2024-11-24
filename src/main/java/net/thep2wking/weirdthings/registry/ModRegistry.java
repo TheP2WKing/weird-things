@@ -2,7 +2,6 @@ package net.thep2wking.weirdthings.registry;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
-import net.minecraft.util.SoundEvent;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -12,7 +11,6 @@ import net.thep2wking.oedldoedlcore.util.ModRegistryHelper;
 import net.thep2wking.weirdthings.WeirdThings;
 import net.thep2wking.weirdthings.init.ModBlocks;
 import net.thep2wking.weirdthings.init.ModItems;
-import net.thep2wking.weirdthings.init.ModSounds;
 
 @Mod.EventBusSubscriber
 public class ModRegistry {
@@ -129,14 +127,5 @@ public class ModRegistry {
 		ModRegistryHelper.registerItem(event, ModItems.VILLAGER_PICKAXE);
 		ModRegistryHelper.registerItem(event, ModItems.VILLAGER_AXE);
 		ModRegistryHelper.registerItem(event, ModItems.VILLAGER_HOE);
-	}
-
-	@SubscribeEvent
-	public static void onSoundEventRegister(RegistryEvent.Register<SoundEvent> event) {
-		ModLogger.registeredSoundEventsLogger(WeirdThings.MODID);
-
-		ModRegistryHelper.registerSoundEvent(event, ModSounds.WITHER_GIRL_IDLE);
-		ModRegistryHelper.registerSoundEvent(event, ModSounds.WITHER_GIRL_HURT);
-		ModRegistryHelper.registerSoundEvent(event, ModSounds.WITHER_GIRL_DEATH);
 	}
 }

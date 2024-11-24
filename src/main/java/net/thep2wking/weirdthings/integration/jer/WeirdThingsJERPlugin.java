@@ -49,7 +49,6 @@ import net.thep2wking.weirdthings.content.entity.EntityVillagerGhast;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerPig;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerSpider;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerWither;
-import net.thep2wking.weirdthings.content.entity.EntityWitherGirl;
 import net.thep2wking.weirdthings.init.ModBlocks;
 import net.thep2wking.weirdthings.init.ModItems;
 
@@ -102,7 +101,6 @@ public class WeirdThingsJERPlugin extends ModJERPluginBase {
 			addMob(new EntityVillagerPig(getWorld()), LightLevel.any, EntityVillagerPig.EXPERIENCE_VALUE, EntityVillagerPig.LOOT_TABLE);
 			addMob(new EntityVillagerSpider(getWorld()), LightLevel.hostile, EntityVillagerSpider.EXPERIENCE_VALUE, EntityVillagerSpider.LOOT_TABLE);
 			addMob(new EntityVillagerWither(getWorld()), LightLevel.any, EntityVillagerWither.EXPERIENCE_VALUE, EntityVillagerWither.LOOT_TABLE);
-			addMob(new EntityWitherGirl(getWorld()), LightLevel.any, EntityWitherGirl.EXPERIENCE_VALUE, EntityWitherGirl.LOOT_TABLE);
 
 			registerMobRenderHook(EntityFlyingPig.class, ModRenderHooks.FLYING_MOB);
 			registerMobRenderHook(EntityFlyingSquid.class, ModRenderHooks.FLYING_MOB);
@@ -111,7 +109,6 @@ public class WeirdThingsJERPlugin extends ModJERPluginBase {
 			registerMobRenderHook(EntityChickenGhast.class, ModRenderHooks.CHICKEN_GHAST);
 			registerMobRenderHook(EntityFatChicken.class, ModRenderHooks.FAT_CHICKEN);
 			registerMobRenderHook(EntityVeryWeirdPig.class, ModRenderHooks.VERY_WEIRD_PIG);
-			registerMobRenderHook(EntityWitherGirl.class, ModRenderHooks.WITHER_GIRL);
 			registerMobRenderHook(EntitySkelepig.class, ModRenderHooks.SKELEPIG);
 			
 			if (WeirdThingsConfig.WORLD.COOKIE_ORE) {

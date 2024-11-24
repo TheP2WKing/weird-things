@@ -41,7 +41,6 @@ import net.thep2wking.weirdthings.content.entity.EntityVillagerGhast;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerPig;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerSpider;
 import net.thep2wking.weirdthings.content.entity.EntityVillagerWither;
-import net.thep2wking.weirdthings.content.entity.EntityWitherGirl;
 import net.thep2wking.weirdthings.content.entity.misc.EntityMegaTNT;
 import net.thep2wking.weirdthings.content.entity.misc.EntityRainbowEgg;
 import net.thep2wking.weirdthings.content.entity.misc.EntityThrowableVillager;
@@ -86,7 +85,6 @@ import net.thep2wking.weirdthings.util.render.villagerghast.RenderVillagerGhast;
 import net.thep2wking.weirdthings.util.render.villagerpig.RenderVillagerPig;
 import net.thep2wking.weirdthings.util.render.villagerspider.RenderVillagerSpider;
 import net.thep2wking.weirdthings.util.render.villagerwither.RenderVillagerWither;
-import net.thep2wking.weirdthings.util.render.withergirl.RenderWitherGirl;
 
 public class ModRenderer {
 	public static void registerRenderer() {
@@ -109,7 +107,6 @@ public class ModRenderer {
 		ModRenderHelper.addEntityRender(EntityCrossyRoadChicken.class, RenderCrossyRoadChicken.FACTORY);
 		ModRenderHelper.addEntityRender(EntityVillagerWither.class, RenderVillagerWither.FACTORY);
 		ModRenderHelper.addEntityRender(EntityVillagerDragon.class, RenderVillagerDragon.FACTORY);
-		ModRenderHelper.addEntityRender(EntityWitherGirl.class, RenderWitherGirl.FACTORY);
 		ModRenderHelper.addEntityRender(EntityHotdog.class, RenderHotdog.FACTORY);
 		ModRenderHelper.addEntityRender(EntityDirtChicken.class, RenderDirtChicken.FACTORY);
 		ModRenderHelper.addEntityRender(EntityDirtGolem.class, RenderDirtGolem.FACTORY);
